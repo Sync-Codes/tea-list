@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tea List!</title>
+     <link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+    <meta name="description" content="An Discord Bot List!">
+	<link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" type="text/css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47473522-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47473522-5');
+  </script>
+
+
+</head>
+
+<body>
+ 
+  <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand" href="https://tea-list.glitch.me/"><img src="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" width="32px">&nbsp Tea List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://tea-list.glitch.me/">Home <span class="sr-only">(current)</span></a>
+          
+           
+          <a class="nav-item nav-link" href="https://discord.gg/m2pxqCJ">Server</a>
+        </div>
+      </div>
+      <ul id="loginButton" class="navbar-nav nav-flex-icons">
+        <div class="dropdown" id="discordUsernameDrop" style="display: none;">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello, <span id="discordUsername"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://tea-list.glitch.me/myBots">My Bots</a>
+            <a class="dropdown-item" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+<style>#staffPanel {
+  padding-top: 25px; 
+}
+
+code {
+  color: white !important;
+}
+
+.cb {
+  background-color: #23272A !important; 
+  padding: 5px 5px 5px 5px !important;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #2C2F33;
+}
+  p{
+    color: #99AAB5;
+  }
+
+.jumbotron {
+  background-color: #2C2F33;
+}
+
+#icon {
+  border: 1px solid #7289DA;
+  border-radius: 50%;
+}
+
+.popover-title{
+  background-color: #2C2F33;
+  color: #99AAB5;
+}
+
+.botIcons {
+  background-color: rgb(44, 47, 51);
+}
+
+.botIcons > img {
+  border-radius: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#instantclick-bar {
+  background: #ad7001 !important;
+}
+
+.bg-light {
+  min-height: -webkit-calc(100% - 325px);
+}
+.nav-tabs {
+  background-color: #7289DA;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.nav-item > .nav-link {
+  color: #FFFFFF;
+}
+
+.list-group-item {
+  background-color: #7289DA; 
+}
+  #icon{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.list-group-item[aria-selected="true"] {
+  background-color: #2C2F33;
+  border-color: #2C2F33 !important;
+}
+
+.list-group-item:hover {
+  background-color: #2C2F33;
+  color: white;
+}
+
+.icon {
+  border-radius: 50%; 
+}
+
+#description {
+  color: white; 
+}
+
+.social {
+  border: 2px solid #7289DA!important;
+  background-color: transparent;
+  color: #7289DA!important;
+}
+
+#view {
+  padding-left: 4rem;
+}
+
+.navbar {
+  background-color: #7289DA;
+}
+
+.navbar > .navbar-brand {
+  color: #FFFFFF; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF; 
+}
+
+.form-control {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:focus {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:disabled {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.custom-select {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+g {
+  color: #7289DA;
+  font-size: 32px;
+  background-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 200;
+  }
+  e{
+      color: RED;
+  font-size: 32px;
+  background-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+.custom-select:focus {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+
+.icon {
+  width: 64px;
+}
+
+#recent:hover {
+  cursor: pointer;
+}
+
+.input-group-text {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+}
+
+.input-group-text:hover {
+  cursor: pointer;
+}
+
+#submitButton {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+  border-radius: .25rem;
+}
+  h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.75rem; }
+  h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 200;
+  line-height: 1.2;
+  color: inherit; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
+    </style>
+   
+<center>
+  <div>
+    
+  <div class="container py-5">
+     <div class="row">
+      <div class="col-md-6">
+        
+  <img class="img-fluid d-block rounded-circle mx-auto" src="<%= avatar %>">
+        <p>
+          <%= user %>#<%= dic %> 
+        </p>
+  </div>
+       <div class="col-md-6">
+        <h2 class="text-primary pt-3">
+       <%= stat %><img style="width: 6%; margin-left: 16px;" src="<%= pic %>" data-toggle="tooltip" data-placement="top" title="<%= stat %>">
+        </h2>
+         <g>
+   <%= d %>
+  </g>
+       </div>  
+    </div>
+  </div>
+  </center>
+  <center>
+ <e>
+   <%= p %>
+    </e>
+    </center>
+    </center>
+  </div>
+ 
+  <div>
+   
+    <!-- Content -->
+    <div class="jumbotron" style="padding-top: 1rem !important;">
+
+      <table class="table table-hover">
+      
+          <tr>
+            <p>
+              <%= user %>'s Bots
+            </p>
+          </tr>
+      
+        <% for(var i=0; i<memberData.length;i++){ %>
+       <th scope="row" width="8%"><img src="<%= memberData[i].avatar%>" class="icon"></th>
+        <th scope="row" width="92%"><p class="lead" style="margin-bottom: 0px;"><%= memberData[i].username%></p><p class="text-muted"><%= memberData[i].summary%></p></th>
+      </table>
+  <% } %>
+    </div>
+      <center>
+
+    </center>
+  </div>
+  </body>
+    <!-- Scripts -->
+  <script src="/socket.io/socket.io.js" crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+ 
+  <script src="https://pizzabot.xyz//assets/instantclick.min.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();</script>
+  
+ 
+
+</html>

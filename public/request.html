@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tea List!</title>
+     <link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+    <meta name="description" content="An Discord Bot List!">
+	<link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="width=device-width" name="viewport">
+    
+	<meta content="profile" property="og:type">
+	<meta content="An Discord Bot List!" property="og:description">
+		<meta content="#373fff" data-react-helmet="true" name="msapplication-TileColor">
+	<meta content="#373fff" data-react-helmet="true" name="theme-color">
+    <meta content="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" property="og:image">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+ <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47473522-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47473522-4');
+  </script>
+
+</head>
+
+<body>
+
+ 
+  <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand" href="https://tea-list.glitch.me/"><img src="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" width="32px">&nbsp Tea List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://tea-list.glitch.me/">Home <span class="sr-only">(current)</span></a>
+          
+           
+          <a class="nav-item nav-link" href="https://discord.gg/m2pxqCJ">Server</a>
+        </div>
+      </div>
+      <ul id="loginButton" class="navbar-nav nav-flex-icons">
+        <div class="dropdown" id="discordUsernameDrop" style="display: none;">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello, <span id="discordUsername"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://tea-list.glitch.me/myBots">My Bots</a>
+            <a class="dropdown-item" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    
+    <!-- Content -->
+  <div class="jumbotron d-flex justify-content-center">
+
+    <div>
+
+      <script type="text/javascript">
+        (function() {
+          if (window.CHITIKA === undefined) {
+            window.CHITIKA = {
+              'units': []
+            };
+          };
+          var unit = {
+            "calltype": "async[2]",
+            "publisher": "teacup",
+            "width": 320,
+            "height": 50,
+            "sid": "Chitika Default"
+          };
+          var placement_id = window.CHITIKA.units.length;
+          window.CHITIKA.units.push(unit);
+          document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+        }());
+      </script>
+  
+
+      <br>
+<a
+          href="https://tea-list.glitch.me/login"
+               ><button type="button"  class="btn btn-sm btn-outline-white">Please Login to submit
+          <i class="fa fa-users ml-2"></i></button>
+      </a>
+      <p class="h4 text-center mb-4">Request </p>
+
+      <!-- Input Username -->
+      <label for="usernameInput" class="grey-text">Username</label>
+      <input type="text" id="usernameInput" class="form-control">
+
+      <br>
+
+      <!-- Input Title -->
+      <label for="codeTitleInput" class="grey-text">Request Title</label>
+      <input type="text" id="titleInput" class="form-control">
+
+      <br>
+
+      <!-- Input Description -->
+      <label for="descInput" class="grey-text">Description/Notes</label>
+      <input type="text" id="descInput" class="form-control">
+
+      <br>
+
+      <div id="alert"></div>
+
+      <div class="text-center mt-4">
+        <button type="button" onclick="submit()" class="btn btn-outline-warning">Submit<i class="fa fa-paper-plane-o ml-2"></i></button>
+      </div>
+
+    </div>
+
+  </div>
+  
+  
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.1/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="request.js"></script>
+ <script src="index.js" crossorigin="anonymous"></script>
+      <script src="functions.js" crossorigin="anonymous"></script>
+</body>
+ 
+  
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tea List!</title>
+     <link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+    <meta name="description" content="An Discord Bot List!">
+	<link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47473522-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47473522-5');
+  </script>
+
+
+</head>
+
+<body>
+ 
+  <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand" href="https://tea-list.glitch.me/"><img src="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" width="32px">&nbsp Tea List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://tea-list.glitch.me/">Home <span class="sr-only">(current)</span></a>
+          
+           
+          <a class="nav-item nav-link" href="https://discord.gg/m2pxqCJ">Server</a>
+        </div>
+      </div>
+      <ul id="loginButton" class="navbar-nav nav-flex-icons">
+        <div class="dropdown" id="discordUsernameDrop" style="display: none;">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello, <span id="discordUsername"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://tea-list.glitch.me/myBots">My Bots</a>
+            <a class="dropdown-item" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+<style>#staffPanel {
+  padding-top: 25px; 
+}
+
+code {
+  color: white !important;
+}
+
+.cb {
+  background-color: #23272A !important; 
+  padding: 5px 5px 5px 5px !important;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #2C2F33;
+}
+
+.jumbotron {
+  background-color: #2C2F33;
+}
+
+#icon {
+  border: 1px solid #7289DA;
+  border-radius: 50%;
+}
+
+.popover-title{
+  background-color: #2C2F33;
+  color: #99AAB5;
+}
+
+.botIcons {
+  background-color: rgb(44, 47, 51);
+}
+
+.botIcons > img {
+  border-radius: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-tabs {
+  background-color: #7289DA;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.nav-item > .nav-link {
+  color: #FFFFFF;
+}
+
+.list-group-item {
+  background-color: #7289DA; 
+}
+
+.list-group-item[aria-selected="true"] {
+  background-color: #2C2F33;
+  border-color: #2C2F33 !important;
+}
+
+.list-group-item:hover {
+  background-color: #2C2F33;
+  color: white;
+}
+
+.icon {
+  border-radius: 50%; 
+}
+
+#description {
+  color: white; 
+}
+
+.social {
+  border: 2px solid #7289DA!important;
+  background-color: transparent;
+  color: #7289DA!important;
+}
+
+#view {
+  padding-left: 4rem;
+}
+
+.navbar {
+  background-color: #7289DA;
+}
+
+.navbar > .navbar-brand {
+  color: #FFFFFF; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF; 
+}
+
+.form-control {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:focus {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:disabled {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.custom-select {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+
+.custom-select:focus {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+
+.icon {
+  width: 64px;
+}
+
+#recent:hover {
+  cursor: pointer;
+}
+
+.input-group-text {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+}
+
+.input-group-text:hover {
+  cursor: pointer;
+}
+
+#submitButton {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+  border-radius: .25rem;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #23272A;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+    tr{
+      color: #FFFFF
+  }</style>
+    <!-- Content -->
+    <div class="jumbotron" style="padding-top: 1rem !important;">
+
+      <table id= "table" class="table table-hover">
+        <thead>
+         
+            <th width="5%"><span class="lead">Queue</span></th>
+          
+        </thead>
+        <tbody id="recent">
+          <tr></tr>
+        </tbody>
+        <span class="text-muted"><b>Note:</b> These are bots awaiting to be approved, rejected, or removed.</span>
+        <p class="text-muted">
+          Once bots are in the testing server, they can be approved for the website. Stricter rules are for inviting to the official Discord server. Although, if a bot doesn't follow the rules feel free to remove it from the site.
+        </p>
+      
+        
+
+      </table>
+    </div>
+    
+    
+
+    <br>
+
+    <font class="d-flex justify-content-center text-center text-muted" size="-1">
+      All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.
+    </font>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js" crossorigin="anonymous"></script>
+  <script src="functions.js" crossorigin="anonymous"></script>
+  <script src="queue.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
