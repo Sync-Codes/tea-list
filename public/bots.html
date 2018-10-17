@@ -1,0 +1,310 @@
+<html>
+  
+    <title>Tea List!</title>
+     <link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+    <meta name="description" content="An Discord Bot List!">
+	<link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="width=device-width" name="viewport">
+    
+	<meta content="profile" property="og:type">
+	<meta content="An Discord Bot List!" property="og:description">
+		<meta content="#373fff" data-react-helmet="true" name="msapplication-TileColor">
+	<meta content="#373fff" data-react-helmet="true" name="theme-color">
+    <meta content="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" property="og:image">
+
+  
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47473522-4"></script>
+  <script>
+ 
+    </script>
+    
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+<body>
+
+ 
+  </body>
+  
+ <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand" href="https://tea-list.glitch.me/"><img src="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" width="32px">&nbsp Tea List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://tea-list.glitch.me/">Home <span class="sr-only">(current)</span></a>
+          
+           
+          <a class="nav-item nav-link" href="https://discord.gg/m2pxqCJ">Server</a>
+        </div>
+      </div>
+      <ul id="loginButton" class="navbar-nav nav-flex-icons">
+        <div class="dropdown" id="discordUsernameDrop" style="display: none;">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello, <span id="discordUsername"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://tea-list.glitch.me/myBots">My Bots</a>
+            <a class="dropdown-item" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+   
+   <style>#staffPanel {
+  padding-top: 25px; 
+}
+
+code {
+  color: white !important;
+}
+
+.cb {
+  background-color: #23272A !important; 
+  padding: 5px 5px 5px 5px !important;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #2C2F33;
+}
+
+.jumbotron {
+  background-color: #2C2F33;
+}
+
+#icon {
+  border: 1px solid #7289DA;
+  border-radius: 50%;
+}
+
+.popover-title{
+  background-color: #2C2F33;
+  color: #99AAB5;
+}
+
+.botIcons {
+  background-color: rgb(44, 47, 51);
+}
+
+.botIcons > img {
+  border-radius: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-tabs {
+  background-color: #7289DA;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.nav-item > .nav-link {
+  color: #FFFFFF;
+}
+
+.list-group-item {
+  background-color: #7289DA; 
+}
+
+.list-group-item[aria-selected="true"] {
+  background-color: #2C2F33;
+  border-color: #2C2F33 !important;
+}
+
+.list-group-item:hover {
+  background-color: #2C2F33;
+  color: white;
+}
+
+.icon {
+  border-radius: 50%; 
+}
+
+#description {
+  color: white; 
+}
+
+.social {
+  border: 2px solid #7289DA!important;
+  background-color: transparent;
+  color: #7289DA!important;
+}
+
+#view {
+  padding-left: 4rem;
+}
+
+.navbar {
+  background-color: #7289DA;
+}
+
+.navbar > .navbar-brand {
+  color: #FFFFFF; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF; 
+}
+
+.form-control {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:focus {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.form-control:disabled {
+  background-color: #23272A;
+  border-color: #23272A;
+}
+
+.custom-select {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+
+.custom-select:focus {
+  background-color: #23272A; 
+  border-color: #23272A;
+}
+
+.icon {
+  width: 64px;
+}
+
+#recent:hover {
+  cursor: pointer;
+}
+
+.input-group-text {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+}
+
+.input-group-text:hover {
+  cursor: pointer;
+}
+
+#submitButton {
+  background-color: #7289DA; 
+  border-color: #7289DA;
+  border-radius: .25rem;
+}
+</style>
+    <div class="jumbotron" style="padding-top: 1rem !important;">
+      <!-- Cards -->
+      <div id="featured" class="row text-center card-deck" style="padding-top: 15px"></div>
+      
+      <!-- Nav tabs -->
+
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="recentView()" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-clock-o"></i> Recent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="sortRated()" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-long-arrow-up"></i> Highest Rated</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-tags"></i> Tags</a>
+        </li>
+      </ul>
+      <!-- Tab panels -->
+      <div class="tab-content">
+        <!--Panel 1-->
+        <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+          <br>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th width="5%"><span class="lead">Recent</span></th>
+              </tr>
+            </thead>
+            <tbody id="recent">
+            </tbody>
+            <span class="text-muted"><b>Note:</b> Bots are bumped on <b>recent</b> when upvoted. <b>Updates in real-time.</b></span>
+          </table>
+        </div>
+        <!--/.Panel 1-->
+        <!--Panel 2-->
+        <div class="tab-pane fade" id="panel6" role="tabpanel">
+          <br>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th width="5%"><span class="lead">Highest</span></th>
+              </tr>
+            </thead>
+            <tbody id="upvoted">
+            </tbody>
+          </table>
+        </div>
+        <!--/.Panel 2-->
+        <!--Panel 3-->
+        <div class="tab-pane fade" id="panel7" role="tabpanel">
+          <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+              </div> <!-- Append via js -->
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <!-- Tags Table -->
+                  <table class="table table-hover">
+                    <tbody id="tags">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Panel 3-->
+      </div>
+  </div>
+    
+    
+
+    <br>
+  
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+  <script src="/socket.io/socket.io.js" crossorigin="anonymous"></script>
+  <script src="functions.js" crossorigin="anonymous"></script>
+  <script src="index.js" crossorigin="anonymous"></script>
+
+</html>

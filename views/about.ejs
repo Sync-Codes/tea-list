@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tea List!</title>
+     <link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+    <meta name="description" content="An Discord Bot List!">
+	<link href="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" rel="icon" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+
+
+
+</head>
+<style>
+  </style>
+<body>
+ 
+  <div class="main">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand" href="https://tea-list.glitch.me/"><img src="https://cdn.discordapp.com/icons/464446382162313227/5abac7582904ccf28ea37ef69c7d37c6.jpg" width="32px">&nbsp Tea List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://tea-list.glitch.me/">Home <span class="sr-only">(current)</span></a>
+          
+           
+          <a class="nav-item nav-link" href="https://discord.gg/m2pxqCJ">Server</a>
+        </div>
+      </div>
+      <ul id="loginButton" class="navbar-nav nav-flex-icons">
+        <div class="dropdown" id="discordUsernameDrop" style="display: none;">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello, <span id="discordUsername"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://tea-list.glitch.me/myBots">My Bots</a>
+            <a class="dropdown-item" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    
+    
+ 
+    
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+           <img id="guild-icon" src="<%= icon %>">
+          <p class="lead">
+            <center>
+            <b style="font-weight: bold;">Tea List</b>&nbsp;is a
+            <i>Discord</i>&nbsp;Bot listing service
+            <br>
+          </p>
+            </center>
+          <div class="row text-left mt-5">
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2">
+                  <i class="d-block mx-auto fa fa-3x fa-thumbs-up"></i>
+                </div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary">
+                    <center>
+                    <b>Easy to use</b>
+                  </h5>
+                </div>
+              </div>
+              <p>Want to see upur bot? Then run t!how in our server!
+                <br>How easy is that?</p>
+                </center>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2">
+                  <i class="d-block mx-auto fa fa-3x fa-angle-double-up"></i>
+                </div>
+                <div class="align-self-center col-10">
+                  <center>
+                  <h5 class="text-secondary">
+                   
+                    <b>Frequent updates!</b>
+                  </h5>
+                </div>
+              </div>
+              <p>The Tea List Team is always learning and changing and so will the site!
+                <br>
+              </p>
+              </center>
+            </div>
+            
+      </div>
+      <br />
+     
+        
+            <b>Meet the team behind Tea List</b>
+        
+        
+    
+    
+    
+    
+    
+      <!-- Scripts -->
+  <script src="/socket.io/socket.io.js" crossorigin="anonymous"></script>
+  <script src="functions.js" crossorigin="anonymous"></script>
+ <script src="index.js" crossorigin="anonymous"></script>
+</body>
+</html>
